@@ -103,13 +103,13 @@ for (let i = 0; i < finances.length; i++) {
     }
     console.log("total:", totalValue);
 
-//  print total change 
+//  print average change 
 let totalChange = 0;
 for (let i = 1; i < finances.length; i++) {
     totalChange += (finances[i][1] - finances[i-1][1]);
 }
 let averageChange = (totalChange / (finances.length - 1)).toFixed(2);
-console.log(averageChange);
+console.log(" average change: "averageChange);
 
 // the greatest increase in profits
 
