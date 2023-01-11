@@ -109,7 +109,7 @@ for (let i = 1; i < finances.length; i++) {
     totalChange += (finances[i][1] - finances[i-1][1]);
 }
 let averageChange = (totalChange / (finances.length - 1)).toFixed(2);
-console.log(" average change: "averageChange);
+console.log(" average change:", averageChange);
 
 // the greatest increase in profits
 
