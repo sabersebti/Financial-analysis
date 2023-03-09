@@ -16,4 +16,5 @@ The greatest increase in profits (date and amount) over the entire period.
 
 The greatest decrease in losses (date and amount) over the entire period.
 
-![image](https://user-images.githubusercontent.com/76743603/224155506-5f09dab7-87d2-44d9-ad0d-9affa704b4df.png)
+![image](https://user-images.githubusercontent.com/76743603/224155733-4fbc6c45-114c-4c96-b4a7-ec9320744417.png)
+
