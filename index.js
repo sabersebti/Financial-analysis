@@ -93,23 +93,25 @@ console.log("Financial Analysis:");
 
 // print total months
 let totalMonthsFigure = finances.length;
-let totalMonths = ["total months:", totalMonthsFigure];
-console.log(totalMonths);
+let totalMonthsStr= `total months: ${totalMonthsFigure}`;
+console.log(totalMonthsStr);
 
 // print total value
 let totalValue = 0;
 for (let i = 0; i < finances.length; i++) {
     totalValue += finances[i][1];
-    }
-    console.log("total:", totalValue);
+}
+let totalValueStr = "Total: " + totalValue.toFixed(2);
+console.log(totalValueStr);
 
 //  print average change 
 let totalChange = 0;
 for (let i = 1; i < finances.length; i++) {
     totalChange += (finances[i][1] - finances[i-1][1]);
-    }
+}
 let averageChange = (totalChange / (finances.length - 1)).toFixed(2);
-console.log(" average change:", averageChange);
+let averageChangeStr = `average change: ${averageChange}`;
+console.log(averageChangeStr);
 
 
 // the greatest increase in profits
@@ -121,14 +123,11 @@ for (let i = 1; i < finances.length; i++) {
         greatestIncrease.change = change;
         greatestIncrease.month = finances[i][0];
     }
-    }
-
-console.log(" greatest increase in profits:", greatestIncrease);
+}
+let greatestIncreaseStr = "greatest increase in profits: " + greatestIncrease.month + " ($" + greatestIncrease.change.toFixed(2) + ")";
+console.log(greatestIncreaseStr);
 
 // the greatest decrease in profits
-
-
-
 let greatestDecrease = {month: '', change: Number.MAX_SAFE_INTEGER};
 
 for (let i = 1; i < finances.length; i++) {
@@ -138,10 +137,8 @@ for (let i = 1; i < finances.length; i++) {
         greatestDecrease.month = finances[i][0];
     }
 }
-
-console.log(" the greatest decrease in profits:", greatestDecrease);
-
-
+let greatestDecreaseStr = "greatest decrease in profits: " + greatestDecrease.month + " ($" + greatestDecrease.change.toFixed(2) + ")";
+console.log(greatestDecreaseStr);
 
 
 
@@ -182,26 +179,3 @@ console.log(" the greatest decrease in profits:", greatestDecrease);
 
 
 
-
-// total revenue(profits-losses)
-// let max;
- //let min;
-
-//for (let i = 0; i < finances.length; i++) {
-  //  if (i === 0) {
-    //    max = finances[i][1];
-      //  min = finances[i][1];
-    //} //else {
-      //  if (max < finances[i][1]) {
-        //    max = finances[i][1];
-          //  console.log("maxMonthIndex", i);
-            //console.log(finances[i][0]);
-
-        //} else if (min > finances[i][1]) {
-          //  min = finances[i][1];
-            //console.log("minMonthIndex", i);
-            //console.log(finances[i][0]);
-        //}
-    //}
-//}
-//console.log(max, min);

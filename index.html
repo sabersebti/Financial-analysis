@@ -4,9 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M4 Challenge</title>
+  
+  <title>Week-4-Challenge</title>
+  
+  <style>
+    /* Define styles for the h1 */
+    h1 {
+      font-family: Arial, sans-serif; /* Use a sans-serif font */
+      color: #00FFFF; /* Set the text color to aqua */
+      text-align: center; /* Center the text */
+      text-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 50px #00BFFF; /* Add a glowing effect with multiple shadows */
+      transform: scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg); /* Reset any previous transformations */
+      transition: all 0.2s ease-in-out; /* Add a smooth transition effect when hovering over the element */
+    }
+
+    /* Define hover styles for the h1 */
+    h1:hover {
+      text-shadow: none; /* Remove the glow effect */
+      transform: scale(1.1) rotateX(10deg) rotateY(10deg) rotateZ(-10deg) skewX(-5deg) skewY(-5deg); /* Add a pop effect with transformations */
+      animation-name: wiggle;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes wiggle {
+        0% {transform: rotate(0deg);}
+        25% {transform: rotate(3deg);}
+        50% {transform: rotate(0deg);}
+        75% {transform: rotate(-3deg);}
+        100% {transform: rotate(0deg);}
+    }
+  </style>
 </head>
+
 <body>
+  <h1>Financial Analysis</h1> <!-- Add the h1 element with the title -->
   <script src="index.js"></script>
 </body>
 </html>
+
+
