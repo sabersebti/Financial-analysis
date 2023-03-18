@@ -18,4 +18,4 @@ The greatest decrease in losses (date and amount) over the entire period.
 
 ![image](https://user-images.githubusercontent.com/76743603/224155733-4fbc6c45-114c-4c96-b4a7-ec9320744417.png)
 
-here is the link to my project, go check it out: https://github.com/sabersebti/week-4-challenge/)
+here is the link to my project, go check it out: https://github.com/sabersebti/Financial-analysis
